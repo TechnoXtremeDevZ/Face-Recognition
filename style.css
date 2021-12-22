@@ -1,0 +1,23 @@
+﻿body {
+    background-color:mediumaquamarine;
+    text-align:center;
+}
+#father {
+    width:750px;
+}
+#mother {
+    width: 750px;
+}
+#brother {
+    width: 750px;
+}
+#sister {
+    width: 750px;
+}
+#box {
+    line-height:3;
+    border:dashed;
+    width:300px;
+    height:200px;
+    margin-left:435px;
+}

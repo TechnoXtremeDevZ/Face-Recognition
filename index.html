@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Face Recognition</title>
+
+    <link href="style.css" type="text/css" rel="stylesheet" lang="en-us" />
+
+    <!-- Bootstrap 3 -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h2 id="fr_intro">
+        Face Recognition
+    </h2>
+    <br />
+    <h3 id="model">
+        Model is trained to identify the following objects:
+    </h3>
+    <br />
+    <h3 id="father" class="btn btn-info">
+        Father
+    </h3>
+    <hr />
+    <h3 id="mother" class="btn btn-info">
+        Mother
+    </h3>
+    <hr />
+    <h3 id="brother" class="btn btn-info">
+        Brother
+    </h3>
+    <hr />
+    <h3 id="sister" class="btn btn-info">
+        Sister
+    </h3>
+    <hr />
+    <div id="box">
+
+    </div>
+    <br />
+    <div id="image">
+
+    </div>
+    <br />
+    <button id="capture" class="btn btn-success" onclick="Capture()">
+        Capture
+    </button>
+    <br />
+    <br />
+    <button id="download" class="btn btn-warning" onclick="Download()">
+        Download
+    </button>
+    <br />
+    <br />
+</body>
+</html>
