@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,11 +6,17 @@
 
     <link href="style.css" type="text/css" rel="stylesheet" lang="en-us" />
 
-    <!-- Bootstrap 3 -->
+    <!-- Bootstrap 3 & ML5 -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js">
+    </script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
 </head>
 <body>
     <h2 id="fr_intro">
@@ -37,7 +43,7 @@
         Sister
     </h3>
     <hr />
-    <div id="box">
+    <div id="camera">
 
     </div>
     <br />
@@ -45,15 +51,14 @@
 
     </div>
     <br />
-    <button id="capture" class="btn btn-success" onclick="Capture()">
-        Capture
+    <button id="capture" class="btn btn-success" onclick="Capture()"> Capture </button>
+    <br />
+    <br />
+    <button id="identify" class="btn btn-warning" onclick="Identify()">
+        Identify
     </button>
     <br />
     <br />
-    <button id="download" class="btn btn-warning" onclick="Download()">
-        Download
-    </button>
-    <br />
-    <br />
+    <script src="main.js"></script>
 </body>
 </html>
