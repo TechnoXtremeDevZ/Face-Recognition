@@ -1,4 +1,4 @@
-﻿Webcam.set({
+Webcam.set({
     width: 400,
     height: 300,
     image_format: "png",
@@ -20,4 +20,20 @@ var classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/mo
 
 function modelClassified() {
     console.log("The model has been classified!");
+}
+
+function Identify() {
+    var img = document.getElementById("selfie");
+    classifier.classify(img, gotResult);
+}
+
+function gotResult(error, results) {
+    if (error) {
+        console.error(error);
+    }
+    else {
+        console.log(results);
+        document.getElementById("capture").innerHTML = results[0].label;
+        document.getElementById("identify").innerHTML = results[0].confidence.toFixed(2) * 100 + "%";
+    }
 }
